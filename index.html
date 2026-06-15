@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CactusFinance — Visão Geral</title>
+
+  <link rel="stylesheet" href="dist/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-[#1a1a1a] text-white min-h-screen flex">
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img src="Images/logo.png" alt="CactusFinance Logo" class="logo-img" />
+      <span class="logo-text">Cactus<br/>Finance</span>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#" class="nav-link active">
+        <span>📊</span>
+        <span class="nav-label">Visão Geral</span>
+      </a>
+      <a href="#" class="nav-link">
+        <span>💰</span>
+        <span class="nav-label">Receitas</span>
+      </a>
+      <a href="#" class="nav-link">
+        <span>💳</span>
+        <span class="nav-label">Despesas</span>
+      </a>
+      <a href="#" class="nav-link">
+        <span>🎯</span>
+        <span class="nav-label">Fundos</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="#" class="nav-link">
+        <span>👤</span>
+        <span class="nav-label">Perfil</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <div class="cactus-header-bar">
+      <div class="flex items-center gap-3">
+        <img src="Images/logo.png" alt="logo" class="header-logo-img" />
+        <div>
+          <h1 class="header-title">Resumo das suas finanças deste mês</h1>
+          <p class="header-sub">Visão geral</p>
+        </div>
+      </div>
+      <button class="btn-nova-transacao">+ Nova Transação</button>
+    </div>
+
+    <div class="content-body">
+
+      <div class="greeting-row">
+        <p class="greeting">Olá, vamos organizar suas finanças! 🌵</p>
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider">
+            <span class="slider-icon"></span>
+          </span>
+        </label>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card card-saldo">
+          <p class="card-label">Saldo disponível</p>
+          <p class="card-value positive">+R$ 1.900</p>
+          <label class="checkbox-row">
+            <input type="checkbox" checked class="checkbox-input" />
+            <span>Dividir automaticamente o saldo restante entre os fundos no fim do mês.</span>
+          </label>
+        </div>
+
+        <div class="card card-receita">
+          <div class="card-top">
+            <p class="card-label">Receitas (mês)</p>
+            <div class="icon-circle icon-green">📈</div>
+          </div>
+          <p class="card-value positive">+R$ 2.000</p>
+        </div>
+
+        <div class="card card-despesa">
+          <div class="card-top">
+            <p class="card-label">Despesas (mês)</p>
+            <div class="icon-circle icon-red">📉</div>
+          </div>
+          <p class="card-value negative">-R$ 550</p>
+        </div>
+
+      </div>
+
+      <div class="mid-grid">
+
+        <div class="card">
+          <p class="section-title">Gastos por categoria</p>
+          <div class="chart-area">
+            <div class="donut">
+              <div class="donut-hole">
+                <span class="donut-total">R$550</span>
+                <span class="donut-sub">total</span>
+              </div>
+            </div>
+            <ul class="legend">
+              <li class="legend-item">
+                <span class="legend-dot" style="background:#e74c3c"></span>
+                <span class="legend-name">Lazer</span>
+                <span class="legend-value">R$ 220</span>
+                <span class="legend-pct">40%</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-dot" style="background:#1b3454"></span>
+                <span class="legend-name">Alimentação</span>
+                <span class="legend-value">R$ 220</span>
+                <span class="legend-pct">40%</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-dot" style="background:#8e44ad"></span>
+                <span class="legend-name">Contas</span>
+                <span class="legend-value">R$ 110</span>
+                <span class="legend-pct">20%</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <p class="section-title">Últimas Transações</p>
+          <table class="transaction-table">
+            <tbody>
+              <tr class="tr-despesa">
+                <td class="td-name">Netflix</td>
+                <td class="td-value negative">-R$ 30</td>
+                <td class="td-date">13/04/2026</td>
+              </tr>
+              <tr class="tr-receita">
+                <td class="td-name">Salário</td>
+                <td class="td-value positive">+R$ 2.000</td>
+                <td class="td-date">05/04/2026</td>
+              </tr>
+              <tr class="tr-despesa">
+                <td class="td-name">Mercado</td>
+                <td class="td-value negative">-R$ 520</td>
+                <td class="td-date">02/04/2026</td>
+              </tr>
+              <tr class="tr-receita">
+                <td class="td-name">Freelancer</td>
+                <td class="td-value positive">+R$ 450</td>
+                <td class="td-date">31/03/2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
