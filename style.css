@@ -452,30 +452,63 @@ body {
   body {
     overflow-y: auto;
     height: auto;
+    flex-direction: column;
   }
 
   .sidebar {
-    width: 52px;
-    min-width: 52px;
-    padding: 10px 6px;
+  width: 100%;
+  height: auto;
+  min-width: unset;
+  flex-direction: row;
+  padding: 8px 14px;
+  border-right: none;
+  border-bottom: 1px solid #333;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.sidebar-nav {
+  flex-direction: row;
+  flex: unset;
+  gap: 2px;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 34px;
+  height: 34px;
+}
+
+  .sidebar-footer {
+    border-top: none;
+    padding-top: 0;
   }
 
-  .logo-text, .nav-label {
+  .nav-label {
     display: none;
   }
 
-  .logo-img {
-    width: 36px;
-    height: 36px;
-  }
-
-  .sidebar-logo {
-    justify-content: center;
-  }
-
   .nav-link {
+    padding: 8px;
     justify-content: center;
-    padding: 10px;
+  }
+
+  .main-content {
+    height: auto;
+  }
+
+  .cactus-header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 14px;
+  }
+
+  .content-body {
+    padding: 10px 14px;
+    overflow-y: auto;
+    height: auto;
   }
 
   .cards-grid {
@@ -484,15 +517,41 @@ body {
 
   .mid-grid {
     grid-template-columns: 1fr;
+    min-height: unset;
   }
 
-  .content-body {
-    padding: 10px;
+  .mid-grid .card {
+    min-height: 300px;
   }
 
-  .cactus-header-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+  .donut {
+    width: 160px;
+    height: 160px;
+    aspect-ratio: unset;
   }
+
+  .chart-area {
+    padding: 20px;
+  }
+
+  .transaction-table td {
+    padding: 10px 8px;
+    font-size: 0.78rem;
+  }
+  .logo-text {
+  display: none;
+}
+
+.legend {
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.legend-item {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+}
 }
